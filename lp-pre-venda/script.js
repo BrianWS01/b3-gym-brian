@@ -47,4 +47,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fix for scroll issues with hidden elements
     window.scrollTo(0, 0);
+
+    // Mobile Menu Toggle
+    // Mobile Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    const closeBtn = document.querySelector('.close-menu');
+
+    function closeMobileMenu() {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    if (hamburger && mobileMenu) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeMobileMenu);
+        }
+
+        // Close menu when clicking a link
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close when clicking outside (backdrop)
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                closeMobileMenu();
+            }
+        });
+    }
 });
