@@ -1,14 +1,15 @@
 :root {
     --primary: #17653C;
     --primary-dark: #0d3b24;
-    --accent: #C5A358;
+    --accent: #17653C;
+    /* Alterado de Dourado para Verde Primary */
     --bg: #0a0a0a;
     --surface: #121212;
     --surface-light: #1a1a1a;
     --text: #ffffff;
     --text-muted: rgba(255, 255, 255, 0.5);
-    --font-heading: 'Syne', sans-serif;
-    --font-body: 'Montserrat', sans-serif;
+    --font-heading: 'Major Mono Display', monospace;
+    --font-body: 'Nunito Sans', sans-serif;
     --transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
