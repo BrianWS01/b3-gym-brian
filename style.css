@@ -108,12 +108,12 @@ body::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 3rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .footer-logo-main {
-    height: 120px;
+    height: 80px;
     /* Tamanho grande e equilibrado */
     width: auto;
     filter: brightness(1.2);
@@ -155,7 +155,7 @@ body::after {
     border: 0;
     height: 1px;
     background: rgba(255, 255, 255, 0.1);
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .footer-columns {
@@ -452,12 +452,12 @@ body::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     /* Reduzi para caber em telas menores */
-    gap: 3.5rem;
+    gap: 2rem;
 }
 
 .plan-card {
     background: var(--surface);
-    padding: 4rem 3rem;
+    padding: 2.5rem 2rem;
     border: 1px solid rgba(255, 255, 255, 0.03);
     position: relative;
     transition: var(--transition);
@@ -498,7 +498,7 @@ body::after {
     font-weight: 800;
     font-family: var(--font-heading);
     display: block;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     letter-spacing: -0.02em;
 }
 
@@ -511,7 +511,7 @@ body::after {
 
 .plan-features {
     list-style: none;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .plan-features li {
@@ -724,8 +724,7 @@ body::after {
 /* Footer */
 .footer {
     background-color: #050505;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 5rem 2rem 2rem;
+    padding: 2rem 1.5rem 1rem;
     color: var(--text-muted);
 }
 
@@ -734,8 +733,8 @@ body::after {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    gap: 4rem;
-    margin-bottom: 4rem;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* ... middle content ... */

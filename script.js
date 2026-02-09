@@ -33,17 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, 100);
 
-    // Navbar scroll effect
-    window.addEventListener('scroll', () => {
-        const nav = document.querySelector('.navbar');
-        if (window.scrollY > 80) {
-            nav.style.background = 'rgba(10, 10, 10, 0.95)';
-            nav.style.padding = '1rem 3rem';
-        } else {
-            nav.style.background = 'rgba(10, 10, 10, 0.8)';
-            nav.style.padding = '1.5rem 3rem';
-        }
-    });
+    // Navbar scroll effect removed to keep it static as requested
 
     // Fix for scroll issues with hidden elements
     window.scrollTo(0, 0);
